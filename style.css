@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    /* padding: 20px; */
+
+}
+header{
+    background:linear-gradient(to right top , rgb(11, 221, 11) , yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 18px;
+}
+header .wish-link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+header .wish-link:hover{
+     color: #9198e5;
+}
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    padding: 10px;
+    width: 300px;
+    margin: 10px auto;
+    border: solid 1px #e66465;
+}
+.card button{
+    border: none;
+    padding: 7px;
+    display: block;
+    width: 70%;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+.card button:hover{
+    transform: translateY(-10px);
+    background-color: #ddd;
+}
+.card p{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.card h2{
+    color: white;
+    text-align: center;
+}
+
+.card:nth-child(1n) h2{
+    background: linear-gradient(#e66465, #9198e5);
+} 
+
+.card:nth-child(2n) h2{
+    background: linear-gradient(#64e6e6, #414feb);
+
+}
+.card:nth-child(3n) h2{
+    background: linear-gradient(#f8f67f, #f06203);
+
+}
+.card:nth-child(4n) h2{
+    background: linear-gradient(#74f185, #3dff02);
+}
+/* search input */
+input[type="search"]{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    letter-spacing: 1.1px;
+    border: 1px solid black;
+    outline: none;
+}
